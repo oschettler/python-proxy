@@ -1,7 +1,7 @@
-# -*- coding: cp1252 -*-
+# -*- coding: utf-8 -*-
 # <PythonProxy.py>
 #
-#Copyright (c) <2009> <F·bio Domingues - fnds3000 in gmail.com>
+#Copyright (c) <2009> <F√°bio Domingues - fnds3000 in gmail.com>
 #
 #Permission is hereby granted, free of charge, to any person
 #obtaining a copy of this software and associated documentation
@@ -25,15 +25,15 @@
 #OTHER DEALINGS IN THE SOFTWARE.
 
 """\
-Copyright (c) <2009> <F·bio Domingues - fnds3000 in gmail.com> <MIT Licence>
+Copyright (c) <2009> <F√°bio Domingues - fnds3000 in gmail.com> <MIT Licence>
 
                   **************************************
                  *** Python Proxy - A Fast HTTP proxy ***
                   **************************************
 
-Neste momento este proxy È um Elie Proxy.
+Neste momento este proxy √© um Elie Proxy.
 
-Suporta os mÈtodos HTTP:
+Suporta os m√©todos HTTP:
  - OPTIONS;
  - GET;
  - HEAD;
@@ -44,40 +44,40 @@ Suporta os mÈtodos HTTP:
  - CONENCT.
 
 Suporta:
- - Conexıes dos cliente em IPv4 ou IPv6;
- - Conexıes ao alvo em IPv4 e IPv6;
- - Conexıes todo o tipo de transmiss„o de dados TCP (CONNECT tunneling),
-     p.e. ligaÁıes SSL, como È o caso do HTTPS.
+ - Conex√µes dos cliente em IPv4 ou IPv6;
+ - Conex√µes ao alvo em IPv4 e IPv6;
+ - Conex√µes todo o tipo de transmiss√£o de dados TCP (CONNECT tunneling),
+     p.e. liga√ß√µes SSL, como √© o caso do HTTPS.
 
 A fazer:
- - Verificar se o input vindo do cliente est· correcto;
-   - Enviar os devidos HTTP erros se n„o, ou simplesmente quebrar a ligaÁ„o;
+ - Verificar se o input vindo do cliente est√° correcto;
+   - Enviar os devidos HTTP erros se n√£o, ou simplesmente quebrar a liga√ß√£o;
  - Criar um gestor de erros;
  - Criar ficheiro log de erros;
- - Colocar excepÁıes nos sÌtios onde È previsÌvel a ocorrÍncia de erros,
+ - Colocar excep√ß√µes nos s√≠tios onde √© previs√≠vel a ocorr√™ncia de erros,
      p.e.sockets e ficheiros;
  - Rever tudo e melhorar a estrutura do programar e colocar nomes adequados nas
-     vari·veis e mÈtodos;
+     vari√°veis e m√©todos;
  - Comentar o programa decentemente;
  - Doc Strings.
 
 Funcionalidades futuras:
- - Adiconar a funcionalidade de proxy anÛnimo e transparente;
+ - Adiconar a funcionalidade de proxy an√≥nimo e transparente;
  - Suportar FTP?.
 
 
-(!) AtenÁ„o o que se segue sÛ tem efeito em conexıes n„o CONNECT, para estas o
- proxy È sempre Elite.
+(!) Aten√ß√£o o que se segue s√≥ tem efeito em conex√µes n√£o CONNECT, para estas o
+ proxy √© sempre Elite.
 
-Qual a diferenÁa entre um proxy Elite, AnÛnimo e Transparente?
- - Um proxy elite È totalmente anÛnimo, o servidor que o recebe n„o consegue ter
-     conhecimento da existÍncia do proxy e n„o recebe o endereÁo IP do cliente;
- - Quando È usado um proxy anÛnimo o servidor sabe que o cliente est· a usar um
-     proxy mas n„o sabe o endereÁo IP do cliente;
-     … enviado o cabeÁalho HTTP "Proxy-agent".
- - Um proxy transparente fornece ao servidor o IP do cliente e um informaÁ„o que
-     se est· a usar um proxy.
-     S„o enviados os cabeÁalhos HTTP "Proxy-agent" e "HTTP_X_FORWARDED_FOR".
+Qual a diferen√ßa entre um proxy Elite, An√≥nimo e Transparente?
+ - Um proxy elite √© totalmente an√≥nimo, o servidor que o recebe n√£o consegue ter
+     conhecimento da exist√™ncia do proxy e n√£o recebe o endere√ßo IP do cliente;
+ - Quando √© usado um proxy an√≥nimo o servidor sabe que o cliente est√° a usar um
+     proxy mas n√£o sabe o endere√ßo IP do cliente;
+     √â enviado o cabe√ßalho HTTP "Proxy-agent".
+ - Um proxy transparente fornece ao servidor o IP do cliente e um informa√ß√£o que
+     se est√° a usar um proxy.
+     S√£o enviados os cabe√ßalhos HTTP "Proxy-agent" e "HTTP_X_FORWARDED_FOR".
 
 """
 
